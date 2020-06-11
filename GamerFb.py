@@ -67,7 +67,7 @@ vuln = "\033[32mVuln"
 
 def siapa():
 	os.system('clear')
-	nama = raw_input("\033[1;97mSiapa nama kamu ? \033[1;91m: \033[1;92m")
+	nama = gamerboy("\033[1;97mSiapa nama kamu ? \033[1;91m: \033[1;92m")
 	if nama =="":
 		print"\033[1;96m[!] \033[1;91mIsi yang benar"
 		time.sleep(1)
@@ -82,8 +82,8 @@ def siapa():
 def loginSC():
 	os.system('clear')
 	print"\033[1;97mSilahkan login SC nya dulu bosque\n"
-	username = raw_input("\033[1;96m[*] \033[1;97mUsername \033[1;91m: \033[1;92m")
-	password = raw_input("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
+	usernam = gamerboy("\033[1;96m[*] \033[1;97mUsername \033[1;91m: \033[1;92m")
+	password = gamerboy("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
 	if username =="Disconect" and password =="Team":
 		print"\033[1;96m[✓] \033[1;92mLogin success"
 		time.sleep(1)
@@ -103,8 +103,8 @@ def login():
 		print logo
 		print 42*"\033[1;96m="
 		print('\033[1;96m[☆] \x1b[1;93mLOGIN AKUN FACEBOOK ANDA \x1b[1;96m[☆]' )
-		id = raw_input('\033[1;96m[+] \x1b[1;93mID/Email \x1b[1;91m: \x1b[1;92m')
-		pwd = raw_input('\033[1;96m[+] \x1b[1;93mPassword \x1b[1;91m: \x1b[1;92m')
+		id = gamerboy('\033[1;96m[+] \x1b[1;93mID/Email \x1b[1;91m: \x1b[1;92m')
+		pwd = gamerboy('\033[1;96m[+] \x1b[1;93mPassword \x1b[1;91m: \x1b[1;92m')
 		tik()
 		try:
 			br.open('https://m.facebook.com')
